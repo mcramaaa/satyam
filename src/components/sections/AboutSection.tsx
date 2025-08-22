@@ -36,6 +36,11 @@ const achievements = [
     title: "IPPAT",
     description: "Ikatan Pejabat Pembuat Akta Tanah",
   },
+  {
+    icon: Users,
+    title: "Konsultan Pajak & Perijinan",
+    description: "Bersertifikasi Brevet Pajak",
+  },
 ];
 
 const missionPoints = [
@@ -136,7 +141,7 @@ export default function AboutSection() {
               Pengakuan atas dedikasi dan profesionalisme kami
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
                 <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-yellow-400/30">

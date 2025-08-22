@@ -4,6 +4,7 @@ import { Menu, Scale, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,14 +46,16 @@ export default function Header() {
       <div className="container mx-auto px-2 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-yellow-400 to-amber-500 p-2 rounded-lg shadow-lg">
-              <Scale className="h-8 w-8 text-black" />
+            <div className="relative w-10 object-contain aspect-square">
+              <Image src={"/satyam.png"} fill alt="satyam" />
             </div>
             <div>
               <h1 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-gray-900 to-yellow-600 bg-clip-text text-transparent">
                 SATYAM LAW OFFICE
               </h1>
-              <p className="text-sm text-gray-600">Advokat & Konsultan Hukum</p>
+              <p className="text-sm text-gray-600">
+                Kantor Hukum & Konsultan Hukum
+              </p>
             </div>
           </div>
 
@@ -103,7 +106,12 @@ export default function Header() {
                   {item.label}
                 </button>
               ))}
-              <Link href="#" className="mt-2">
+
+              <Link
+                href="https://api.whatsapp.com/send?phone=628123264199&text=Hai%20Satyam%20Law%20Office"
+                target="_blank"
+                className="mt-2"
+              >
                 <Button className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black border-0 shadow-lg font-semibold w-full">
                   Konsultasi Gratis
                 </Button>

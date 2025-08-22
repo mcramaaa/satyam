@@ -55,25 +55,22 @@ export default function HeroSection() {
           <div className="text-center mb-12">
             <div className="flex justify-center">
               <div className="flex items-center w-fit gap-3 mb-6  px-4 py-2 text-sm font-medium ">
-                <div className="relative w-10 object-contain aspect-square">
+                <div className="relative w-20 md:w-16 object-contain aspect-square">
                   <Image src={"/satyam.png"} fill alt="satyam" />
                 </div>
-                <p className="text-3xl font-bold text-red-800 ">
+                <p className="text-3xl font-black text-red-800 ">
                   SATYAM LAW OFFICE
                 </p>
-                <div className="relative w-10 object-contain aspect-square">
+                <div className="relative w-20 md:w-16 object-contain aspect-square">
                   <Image src={"/satyam.png"} fill alt="satyam" />
                 </div>
               </div>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-yellow-600 bg-clip-text text-transparent">
-                Kantor Hukum &
+            <h1 className="text-2xl md:text-4xl font-bold mb-6 flex justify-center">
+              <span className="bg-gradient-to-r from-gray-900 via-amber-600 to-yellow-600 bg-clip-text text-transparent">
+                Kantor Hukum & Konsultan Hukum
               </span>
-              <br />
-              <span className="bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">
-                Konsultan Hukum
-              </span>
+              <span className="bg-gradient-to-r  bg-clip-text text-transparent"></span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Mitra Hukum Profesional dan Terpercaya dengan Pengalaman Lebih

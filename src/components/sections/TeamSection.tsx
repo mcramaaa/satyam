@@ -1,17 +1,20 @@
 import { User, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 const teamLead = [
   {
-    name: "Dr. Ahmad Satyam, S.H., M.H.",
-    position: "Managing Partner",
+    name: " I Dewa Ayu Yudhiani, SH, M.Kn",
+    position: "Notaris & PPAT",
+    img: "/estri.png",
     description: "Spesialis Hukum Pidana & Perdata dengan pengalaman 20+ tahun",
     specialties: ["Hukum Pidana", "Litigasi"],
   },
   {
-    name: "Sari Dewi, S.H., M.Kn.",
-    position: "Senior Partner",
+    name: "I Gusti Ngurah Bagus Suryadharma, SH, M.Kn",
+    position: "Legal Specialist",
+    img: "/jaler.png",
     description:
       "Ahli Hukum Perusahaan & Investasi dengan track record internasional",
     specialties: ["Corporate Law", "Investment"],
@@ -58,11 +61,19 @@ export default function TeamSection() {
           {teamLead.map((member, index) => (
             <Card
               key={index}
-              className=" shadow-xl hover:shadow-2xl max-w-96 transition-all duration-300 group overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-200"
+              className=" shadow-xl hover:shadow-2xl w-96 transition-all duration-300 group overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-200 aspect-square"
             >
               <div className="relative">
-                <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-64 flex items-center justify-center">
-                  <Users className="h-20 w-20 text-gray-400" />
+                <div
+                  className="bg-radial from-gray-100 from-50%
+                 to-gray-200 h-36 md:h-64 flex items-center justify-center"
+                >
+                  <Image
+                    fill
+                    alt=""
+                    src={member.img}
+                    className="object-contain"
+                  />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -73,8 +84,8 @@ export default function TeamSection() {
                 <p className="text-yellow-600 font-semibold mb-3">
                   {member.position}
                 </p>
-                <p className="text-gray-600 mb-4">{member.description}</p>
-                <div className="flex space-x-2">
+                {/* <p className="text-gray-600 mb-4">{member.description}</p> */}
+                {/* <div className="flex space-x-2">
                   {member.specialties.map((specialty, idx) => (
                     <Badge
                       key={idx}
@@ -84,7 +95,7 @@ export default function TeamSection() {
                       {specialty}
                     </Badge>
                   ))}
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}

@@ -49,14 +49,14 @@ export default function Footer() {
                 <h3 className="text-2xl font-bold text-red-900">
                   SATYAM LAW OFFICE
                 </h3>
-                <p className="text-gray-600">Advokat & Konsultan Hukum</p>
+                <p className="text-gray-600">Kantor Hukum & Konsultan Hukum</p>
               </div>
             </div>
             <p className="text-gray-600 mb-6 max-w-md">
               Mitra hukum profesional dan terpercaya dengan pengalaman lebih
               dari 15 tahun dalam memberikan solusi hukum terbaik.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <div
                   key={index}
@@ -65,7 +65,7 @@ export default function Footer() {
                   <social.icon className="h-5 w-5" />
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
@@ -103,12 +103,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-300 pt-8 text-center">
+        <div className="border-t border-gray-300 pt-8 text-center text-xs grid place-items-center">
+          © 2024 Satyam Law Office. Semua hak dilindungi undang-undang.
           <p className="text-gray-600">
-            © 2024 Satyam Law Office. Semua hak dilindungi undang-undang. |
-            <span className="text-yellow-600 ml-1">
-              Dibuat oleh️ Cathabot.id untuk keadilan
-            </span>
+            <Link
+              href={"https://mcrama.vercel.app/"}
+              className="text-yellow-600 ml-1 flex items-center gap-2"
+              target="_blank"
+            >
+              Dibuat oleh️ Cathabot.id untuk keadilan{" "}
+              <Scale className="w-4 h-4" />
+            </Link>
           </p>
         </div>
       </div>
