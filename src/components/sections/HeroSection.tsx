@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const stats = [
   { value: "500+", label: "Klien Terlayani" },
-  { value: "15+", label: "Tahun Pengalaman" },
+  // { value: "15+", label: "Tahun Pengalaman" },
   { value: "98%", label: "Tingkat Keberhasilan" },
   { value: "24/7", label: "Layanan Darurat" },
 ];
@@ -73,8 +73,7 @@ export default function HeroSection() {
               <span className="bg-gradient-to-r  bg-clip-text text-transparent"></span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Mitra Hukum Profesional dan Terpercaya dengan Pengalaman Lebih
-              dari 15 Tahun
+              Mitra Hukum Profesional dan Terpercaya
             </p>
             <p className="text-lg text-gray-500 mb-12 max-w-4xl mx-auto">
               Kami memberikan layanan hukum terpadu yang mencakup litigasi,
@@ -102,7 +101,7 @@ export default function HeroSection() {
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-16 mt-12">
             {stats.map((stat, index) => (
               <div
                 key={index}

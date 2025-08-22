@@ -59,16 +59,16 @@ export function EducationMarquee() {
       <div className="container mx-auto px-4 mb-12">
         <div className="text-center">
           <Badge className="mb-6 bg-yellow-100 text-yellow-600 border-yellow-400/50 px-4 py-2">
-            📚 EDUKASI HUKUM
+            📚 GALERIS HUKUM
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Pusat <span className="text-yellow-600">Edukasi</span> Hukum
+            <span className="text-yellow-600">Galeri</span> Hukum
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Pelajari berbagai aspek hukum melalui video tutorial dan infografis
             yang mudah dipahami
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -81,13 +81,13 @@ export function EducationMarquee() {
               key={`first-${index}`}
               className="flex-shrink-0 w-80 shadow-xl hover:shadow-2xl transition-all duration-300 group border-0 bg-white justify-between"
             >
-              <div className="relative overflow-hidden rounded-t-lg">
+              <div className="relative overflow-hidden rounded-lg">
                 <img
                   src={content.thumbnail || "/placeholder.svg"}
                   alt={content.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+                {/* <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
                 <div className="absolute top-4 left-4">
                   <Badge
                     className={`${
@@ -122,9 +122,9 @@ export function EducationMarquee() {
                       {content.duration}
                     </Badge>
                   </div>
-                )}
+                )} */}
               </div>
-              <CardContent className="p-6 ">
+              {/* <CardContent className="p-6 ">
                 <div className="mb-3">
                   <Badge
                     variant="secondary"
@@ -144,7 +144,7 @@ export function EducationMarquee() {
                     ? "Tonton Video"
                     : "Lihat Infografis"}
                 </Button>
-              </CardContent>
+              </CardContent> */}
             </Card>
           ))}
 
@@ -154,14 +154,14 @@ export function EducationMarquee() {
               key={`second-${index}`}
               className="flex-shrink-0 w-80 shadow-xl hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
-              <div className="relative overflow-hidden rounded-t-lg">
+              <div className="relative overflow-hidden rounded-lg">
                 <img
                   src={content.thumbnail || "/placeholder.svg"}
                   alt={content.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
-                <div className="absolute top-4 left-4">
+                {/* <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div> */}
+                {/* <div className="absolute top-4 left-4">
                   <Badge
                     className={`${
                       content.type === "video"
@@ -188,16 +188,16 @@ export function EducationMarquee() {
                       <Play className="w-6 h-6 text-gray-900 fill-current" />
                     </div>
                   </div>
-                )}
-                {content.duration && (
+                )} */}
+                {/* {content.duration && (
                   <div className="absolute bottom-4 right-4">
                     <Badge className="bg-black/70 text-white text-xs">
                       {content.duration}
                     </Badge>
                   </div>
-                )}
+                )} */}
               </div>
-              <CardContent className="p-6">
+              {/* <CardContent className="p-6">
                 <div className="mb-3">
                   <Badge
                     variant="secondary"
@@ -217,7 +217,7 @@ export function EducationMarquee() {
                     ? "Tonton Video"
                     : "Lihat Infografis"}
                 </Button>
-              </CardContent>
+              </CardContent> */}
             </Card>
           ))}
         </div>
