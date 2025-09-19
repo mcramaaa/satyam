@@ -41,7 +41,6 @@ const teamMembers = [
 ];
 
 export default function TeamSection() {
-  console.log("first", teamMembers.lastIndexOf.name);
   return (
     <section id="team" className="py-24 bg-white">
       <div className="container mx-auto px-4">
