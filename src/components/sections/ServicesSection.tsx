@@ -10,6 +10,8 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Item } from "@radix-ui/react-accordion";
 
 const services = [
   {
@@ -117,9 +119,15 @@ export default function ServicesSection() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full mt-6 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black font-semibold">
-                  Pelajari Lebih Lanjut
-                </Button>
+                <Link
+                  href={`https://api.whatsapp.com/send?phone=628123264199&text=Hai%20Satyam%20Law%20Office,%20saya%20mau%20tanya%20tentang%20${service.title}`}
+                  target="_blank"
+                  className="mt-2"
+                >
+                  <Button className="w-full mt-6 bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black font-semibold">
+                    Tanyakan lebih lanjut
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

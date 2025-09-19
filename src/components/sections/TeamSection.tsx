@@ -2,6 +2,7 @@ import { User, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import Link from "next/link";
 
 const teamLead = [
   {
@@ -40,6 +41,7 @@ const teamMembers = [
 ];
 
 export default function TeamSection() {
+  console.log("first", teamMembers.lastIndexOf.name);
   return (
     <section id="team" className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -105,20 +107,37 @@ export default function TeamSection() {
           Tim lain kami
         </p> */}
         <div className="flex justify-center gap-10 flex-wrap mt-14">
-          {teamMembers.map((service, index) => (
-            <div
-              key={index}
-              className=" bg-gradient-to-br from-white/80 to-gray-50/80 backdrop-blur-sm p-3 rounded-2xl border border-gray-200 hover:border-yellow-400/50 transition-all duration-300 group drop-shadow-md w-full md:w-fit"
-            >
-              <div className="flex items-start gap-2">
-                {/* <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 p-2 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"> */}
-                <User className="h-5 w-5 mt-[2px] text-yellow-600" />
-                {/* </div> */}
-                <p className="w-full font-bold">{service.name}</p>
+          {teamMembers.map((service, index) =>
+            service.name === teamMembers[teamMembers.length - 1].name ? (
+              <Link
+                href={"https://mcrama.vercel.app/"}
+                target="_blank"
+                key={index}
+                className=" bg-gradient-to-br from-white/80 to-gray-50/80 backdrop-blur-sm p-3 rounded-2xl border border-gray-200 hover:border-yellow-400/50 transition-all duration-300 group drop-shadow-md w-full md:w-fit hover:cursor-pointer"
+              >
+                <div className="flex items-start gap-2">
+                  {/* <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 p-2 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"> */}
+                  <User className="h-5 w-5 mt-[2px] text-yellow-600" />
+                  {/* </div> */}
+                  <p className="w-full font-bold">{service.name}</p>
+                </div>
+                <p className="text-gray-600 mt-2 text-sm">{service.position}</p>
+              </Link>
+            ) : (
+              <div
+                key={index}
+                className=" bg-gradient-to-br from-white/80 to-gray-50/80 backdrop-blur-sm p-3 rounded-2xl border border-gray-200 hover:border-yellow-400/50 transition-all duration-300 group drop-shadow-md w-full md:w-fit"
+              >
+                <div className="flex items-start gap-2">
+                  {/* <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 p-2 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"> */}
+                  <User className="h-5 w-5 mt-[2px] text-yellow-600" />
+                  {/* </div> */}
+                  <p className="w-full font-bold">{service.name}</p>
+                </div>
+                <p className="text-gray-600 mt-2 text-sm">{service.position}</p>
               </div>
-              <p className="text-gray-600 mt-2 text-sm">{service.position}</p>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </section>

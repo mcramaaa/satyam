@@ -17,13 +17,23 @@ const contactInfo = [
     link: "https://api.whatsapp.com/send?phone=628123264199&text=Hai%20Satyam%20Law%20Office",
   },
   {
+    icon: Phone,
+    text: "0812-3524-7453",
+    link: "https://api.whatsapp.com/send?phone=6281235247453&text=Hai%20Satyam%20Law%20Office",
+  },
+  {
+    icon: Mail,
+    text: "dewaayu_notaris@yahoo.com",
+    link: `mailto:dewaayu_notaris@yahoo.com`,
+  },
+  {
     icon: Mail,
     text: "ignbagus17@gmail.com",
     link: `mailto:ignbagus17@gmail.com`,
   },
   {
     icon: MapPin,
-    text: "Jl. Swan Menganti Park No.Kel, Pelemwatu, Kec. Menganti, Kabupaten Gresik, Jawa Timur 6117",
+    text: "Berlian IV Blok AA 131, Perumahan Jl. Swan Menganti Park No.Kel, Pelemwatu, Kec. Menganti, Kabupaten Gresik, Jawa Timur 61174",
     link: "https://g.co/kgs/RTkbMnz",
   },
 ];
@@ -36,7 +46,10 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-white to-gray-50 text-gray-900 py-12 border-t border-yellow-400/30">
+    <footer
+      id="footer"
+      className="bg-gradient-to-r from-white to-gray-50 text-gray-900 py-12 border-t border-yellow-400/30"
+    >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -92,7 +105,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-gray-600">
               {contactInfo.map((contact, index) => (
-                <li key={index} className="flex items-start">
+                <li
+                  key={index}
+                  className="flex items-start hover:text-yellow-600 hover:scale-105 transition duration-300"
+                >
                   <contact.icon className="h-4 w-4 mr-2 mt-1" />
                   <Link target="_blank" href={contact.link} className="w-full">
                     {contact.text}

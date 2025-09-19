@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Scale, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -16,7 +16,7 @@ export default function Header() {
     { href: "#education", label: "Edukasi" },
     { href: "#team", label: "Tim" },
     { href: "#cases", label: "Kasus" },
-    { href: "#contact", label: "Kontak" },
+    { href: "#footer", label: "Kontak" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -33,8 +33,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  console.log(isScrolled);
-
   return (
     <header
       className={` sticky top-0 z-50 duration-300 ${
@@ -45,7 +43,10 @@ export default function Header() {
     >
       <div className="container mx-auto px-2 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <div
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="flex items-center space-x-2 hover:cursor-pointer hover:scale-105 transition-all duration-300"
+          >
             <div className="relative w-10 object-contain aspect-square">
               <Image src={"/satyam.png"} fill alt="satyam" />
             </div>
@@ -83,9 +84,15 @@ export default function Header() {
           </button>
 
           <div className="md:flex hidden items-center space-x-4">
-            <Button className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black border-0 shadow-lg font-semibold">
-              Konsultasi Gratis
-            </Button>
+            <Link
+              href="https://api.whatsapp.com/send?phone=628123264199&text=Hai%20Satyam%20Law%20Office"
+              target="_blank"
+              className="mt-2"
+            >
+              <Button className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black border-0 shadow-lg font-semibold w-full">
+                Konsultasi Gratis
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
