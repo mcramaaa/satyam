@@ -51,10 +51,10 @@ export default function Header() {
               <Image src={"/satyam.png"} fill alt="satyam" />
             </div>
             <div>
-              <h1 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-gray-900 to-yellow-600 bg-clip-text text-transparent">
+              <h1 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-gray-900 to-yellow-600 bg-clip-text text-transparent">
                 SATYAM LAW OFFICE
               </h1>
-              <p className="text-sm text-gray-600">
+              <p className="text-xs md:text-sm text-gray-600">
                 Kantor Hukum & Konsultan Hukum
               </p>
             </div>
