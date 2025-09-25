@@ -45,7 +45,7 @@ export default function FAQSection() {
             Pertanyaan <span className="text-yellow-600">Umum</span>
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className=" md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Jawaban atas pertanyaan yang sering diajukan klien
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function FAQSection() {
                     <div className="bg-gradient-to-r from-yellow-400 to-amber-500 p-2.5 rounded-lg group-hover:from-yellow-300 group-hover:to-amber-400 transition-all duration-300 shadow-lg">
                       <MessageCircle className="h-5 w-5 text-black" />
                     </div>
-                    <span className="font-semibold text-gray-900 text-lg group-hover:text-yellow-600 transition-colors">
+                    <span className="font-semibold text-gray-900 md:text-lg group-hover:text-yellow-600 transition-colors">
                       {faq.question}
                     </span>
                   </div>

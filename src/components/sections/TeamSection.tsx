@@ -52,7 +52,7 @@ export default function TeamSection() {
             Tim <span className="text-yellow-600">Ahli</span> Kami
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
             Dipimpin oleh para ahli hukum berpengalaman dengan spesialisasi di
             berbagai bidang
           </p>
@@ -62,24 +62,22 @@ export default function TeamSection() {
           {teamLead.map((member, index) => (
             <Card
               key={index}
-              className=" shadow-xl hover:shadow-2xl w-96 transition-all duration-300 group overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-200 aspect-square"
+              className=" shadow-xl hover:shadow-2xl  transition-all duration-300 group overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-200 max-w-72"
             >
-              <div className="relative">
-                <div
-                  className="bg-radial from-gray-100 from-50%
-                 to-gray-200 h-36 md:h-64 flex items-center justify-center"
-                >
-                  <Image
-                    fill
-                    alt=""
-                    src={member.img}
-                    className="object-contain"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div
+                className="bg-radial from-gray-100 from-50%
+                 to-gray-200 w-full aspect-square flex items-center justify-center relative"
+              >
+                <Image
+                  fill
+                  alt=""
+                  src={member.img}
+                  className="object-contain"
+                />
               </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
+              <CardContent className="p-5">
+                <h3 className="md:text-xl font-bold text-gray-900 mb-2">
                   {member.name}
                 </h3>
                 <p className="text-yellow-600 font-semibold mb-3">

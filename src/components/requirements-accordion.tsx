@@ -85,7 +85,7 @@ export function RequirementsAccordion() {
                 <div className="bg-gradient-to-r from-yellow-400 to-amber-500 p-2.5 rounded-lg group-hover:from-yellow-300 group-hover:to-amber-400 transition-all duration-300 shadow-lg">
                   <requirement.icon className="h-5 w-5 text-black" />
                 </div>
-                <span className="font-semibold text-gray-900 text-lg group-hover:text-yellow-600 transition-colors">
+                <span className="font-semibold text-gray-900 md:text-lg group-hover:text-yellow-600 transition-colors">
                   {requirement.title}
                 </span>
               </div>

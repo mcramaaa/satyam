@@ -44,16 +44,7 @@ const services = [
       "Akta Pendirian & Perubahan Perusahaan",
     ],
   },
-  {
-    icon: Shield,
-    title: "Pertanahan & Bangunan",
-    items: [
-      "Jual Beli dan Balik Nama Sertifikat",
-      "Hibah, Waris, AJB",
-      "SHM, HGB",
-      "IMB & Sertifikat Layak Fungsi (SLF)",
-    ],
-  },
+
   {
     icon: Heart,
     title: "Hukum Keluarga & Waris",
@@ -62,6 +53,24 @@ const services = [
       "Perwalian Anak",
       "Pembagian Warisan",
       "Akta Kelahiran, Akta Kematian",
+    ],
+  },
+  {
+    icon: Shield,
+    title: "Pertanahan & Bangunan",
+    items: [
+      "Jual Beli dan Balik Nama Sertifikat",
+      "Hibah, Waris, AJB",
+      "SHM, HGB (Peningkatan Hak, Perpanjangan Hak, Pengajuan Baru)",
+      "IMB & Sertifikat Layak Fungsi (SLF)",
+      "Akta Jual Beli",
+      "Akta Hibah",
+      "Akta Pembagian Hak Bersama",
+      "Akta Pembagian Hak Waris",
+      "Balik Nama Sertipikat",
+      "Pengurusan Petok D, Letter C",
+      "Roya",
+      "Pecah Sertipikat/Pecah Kapling",
     ],
   },
   {
@@ -91,7 +100,7 @@ export default function ServicesSection() {
             Layanan Hukum <span className="text-yellow-600">Terpadu</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
             Solusi hukum komprehensif untuk semua kebutuhan legal Anda
           </p>
         </div>
@@ -100,9 +109,9 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 group bg-gradient-to-br from-white to-gray-50 border border-gray-200"
+              className="border-none shadow-xl hover:shadow-2xl transition-all duration-300 group bg-gradient-to-br from-white to-gray-50 border border-gray-200 h-fit"
             >
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-4 grid place-items-center">
                 <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border border-yellow-400/30">
                   <service.icon className="h-8 w-8 text-yellow-600" />
                 </div>
@@ -113,9 +122,9 @@ export default function ServicesSection() {
               <CardContent>
                 <ul className="space-y-3 text-gray-600">
                   {service.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center">
+                    <li key={idx} className="flex items-start w-full">
                       <ChevronRight className="h-4 w-4 text-yellow-600 mr-2" />
-                      {item}
+                      <p className="w-full text-xs md:text-sm">{item}</p>
                     </li>
                   ))}
                 </ul>

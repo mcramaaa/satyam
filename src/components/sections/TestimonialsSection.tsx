@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <Badge className="mb-6 bg-yellow-100 text-yellow-600 border-yellow-400/50 px-4 py-2">
             💬 TESTIMONI KLIEN
           </Badge>
@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
             Apa Kata <span className="text-yellow-600">Klien</span> Kami
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
             Kepuasan klien adalah prioritas utama kami
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
                     />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-6 text-lg leading-relaxed italic">
+                <p className="text-gray-600 mb-6 text-sm md:text-base leading-relaxed italic">
                   "{testimonial.content}"
                 </p>
                 <div className="flex items-center">

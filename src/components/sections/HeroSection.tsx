@@ -72,20 +72,20 @@ export default function HeroSection() {
               </span>
               <span className="bg-gradient-to-r  bg-clip-text text-transparent"></span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            {/* <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Mitra Hukum Profesional dan Terpercaya
-            </p>
-            <p className="text-lg text-gray-500 mb-12 max-w-4xl mx-auto">
+            </p> */}
+            <p className="md:text-lg text-gray-500 mb-12 max-w-4xl mx-auto">
               Kami memberikan layanan hukum terpadu yang mencakup litigasi,
               perizinan usaha, notaris, serta pengurusan dokumen legal untuk
               pribadi dan perusahaan dengan standar internasional.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               asChild
               size="lg"
-              className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black border-0 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 text-black border-0 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 w-fit"
             >
               <Link
                 href={
@@ -101,16 +101,18 @@ export default function HeroSection() {
           </div>
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-16 mt-12">
+          <div className="grid grid-cols-3 gap-6 mb-16 mt-12">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="text-center bg-gradient-to-r from-gray-50/50 to-white/50 p-6 rounded-xl border border-yellow-400/30 backdrop-blur-sm"
+                className="text-center bg-gradient-to-r from-gray-50/50 to-white/50 p-2 rounded-xl border border-yellow-400/30 backdrop-blur-sm grid place-items-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-yellow-600 mb-2">
+                <div className="text-xl md:text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">
                   {stat.value}
                 </div>
-                <div className="text-gray-600 text-sm">{stat.label}</div>
+                <div className="text-gray-600 text-xs text-center">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -120,7 +122,7 @@ export default function HeroSection() {
             {serviceHighlights.map((service, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-white/80 to-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200 hover:border-yellow-400/50 transition-all duration-300 group"
+                className="bg-gradient-to-br from-white/80 to-gray-50/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-200 hover:border-yellow-400/50 transition-all duration-300 group flex flex-col items-center text-center"
               >
                 <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="h-6 w-6 text-yellow-600" />

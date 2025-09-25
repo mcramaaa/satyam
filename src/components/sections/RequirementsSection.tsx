@@ -9,7 +9,7 @@ export default function RequirementsSection() {
             Persyaratan <span className="text-yellow-600">Dokumen</span>
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Dokumen dan persyaratan yang diperlukan untuk berbagai layanan hukum
             kami
           </p>

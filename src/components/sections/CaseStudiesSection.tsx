@@ -22,7 +22,7 @@ const caseStudies = [
   {
     title: "Kasus Pidana Ekonomi",
     description:
-      "Berhasil membebaskan klien dari tuduhan korupsi dengan nilai Rp 5 miliar melalui pembuktian yang komprehensif di Pengadilan Tinggi.",
+      "Berhasil membebaskan klien dari tuduhan korupsi dengan nilai Rp 50 miliar melalui pembuktian yang komprehensif di Mahkamah Agung.",
     icon: Gavel,
     category: "Hukum Pidana",
     year: "2022",
@@ -41,7 +41,7 @@ export default function CaseStudiesSection() {
             Kisah <span className="text-yellow-600">Sukses</span> Klien
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="md:text-xl text-gray-600 max-w-3xl mx-auto">
             Beberapa kasus yang telah berhasil kami tangani dengan hasil
             memuaskan
           </p>
@@ -65,7 +65,9 @@ export default function CaseStudiesSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">{caseStudy.description}</p>
+                <p className="text-gray-600 mb-4 text-sm md:text-base">
+                  {caseStudy.description}
+                </p>
                 <div className="flex items-center text-sm text-gray-500">
                   <caseStudy.icon className="h-4 w-4 mr-2" />
                   {caseStudy.category} • {caseStudy.year}

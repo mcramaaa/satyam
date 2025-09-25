@@ -68,7 +68,7 @@ export default function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="md:text-lg text-justify text-gray-600 mb-8 leading-relaxed">
               <span className="font-semibold text-gray-900">
                 SATYAM LAW OFFICE
               </span>{" "}
@@ -102,7 +102,7 @@ export default function AboutSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 md:text-lg leading-relaxed">
                   Menjadi kantor hukum yang terpercaya, progresif, dan adaptif
                   dalam memberikan perlindungan hukum yang menyeluruh dengan
                   standar internasional.
@@ -122,7 +122,7 @@ export default function AboutSection() {
                   {missionPoints.map((point, index) => (
                     <li key={index} className="flex items-start">
                       <div className="bg-gradient-to-r from-yellow-400 to-amber-500 w-2 h-2 rounded-full mr-4 mt-3 flex-shrink-0"></div>
-                      <span className="text-lg">{point}</span>
+                      <span className="md:text-lg">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -132,7 +132,7 @@ export default function AboutSection() {
         </div>
 
         {/* Awards & Certifications */}
-        <div className="bg-gradient-to-r from-white to-gray-50 rounded-3xl p-12 text-gray-900 border border-yellow-400/30">
+        <div className="bg-gradient-to-r from-white to-gray-50 rounded-3xl p-5 text-gray-900 border border-yellow-400/30">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 text-gray-900">
               Penghargaan & Sertifikasi
@@ -141,16 +141,18 @@ export default function AboutSection() {
               Pengakuan atas dedikasi dan profesionalisme kami
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
               <div key={index} className="text-center">
                 <div className="bg-gradient-to-r from-yellow-400/20 to-amber-500/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-yellow-400/30">
                   <achievement.icon className="h-8 w-8 text-yellow-600" />
                 </div>
-                <h4 className="font-semibold text-lg mb-2 text-gray-900">
+                <h4 className="font-semibold mb-2 text-gray-900">
                   {achievement.title}
                 </h4>
-                <p className="text-gray-600">{achievement.description}</p>
+                <p className="text-gray-600 text-sm">
+                  {achievement.description}
+                </p>
               </div>
             ))}
           </div>

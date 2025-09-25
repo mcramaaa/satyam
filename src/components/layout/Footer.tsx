@@ -65,7 +65,7 @@ export default function Footer() {
                 <p className="text-gray-600">Kantor Hukum & Konsultan Hukum</p>
               </div>
             </div>
-            <p className="text-gray-600 mb-6 max-w-md">
+            <p className="text-gray-600 mb-6 max-w-md text-sm md:text-base">
               Mitra hukum profesional dan terpercaya dengan pengalaman lebih
               dari 15 tahun dalam memberikan solusi hukum terbaik.
             </p>
@@ -90,7 +90,7 @@ export default function Footer() {
               {serviceLinks.map((service, index) => (
                 <li
                   key={index}
-                  className="hover:text-yellow-600 transition-colors cursor-pointer"
+                  className="hover:text-yellow-600 transition-colors cursor-pointer text-sm md:text-base"
                 >
                   {service}
                 </li>
@@ -107,7 +107,7 @@ export default function Footer() {
               {contactInfo.map((contact, index) => (
                 <li
                   key={index}
-                  className="flex items-start hover:text-yellow-600 hover:scale-105 transition duration-300"
+                  className="flex items-start hover:text-yellow-600 hover:scale-105 transition duration-300 text-sm md:text-base"
                 >
                   <contact.icon className="h-4 w-4 mr-2 mt-1" />
                   <Link target="_blank" href={contact.link} className="w-full">
