@@ -13,7 +13,7 @@ export default function Header() {
   const navigationItems = [
     { href: "#about", label: "Tentang" },
     { href: "#services", label: "Layanan" },
-    { href: "#education", label: "Edukasi" },
+    { href: "#education", label: "Galeri" },
     { href: "#team", label: "Tim" },
     { href: "#cases", label: "Kasus" },
     { href: "#footer", label: "Kontak" },
