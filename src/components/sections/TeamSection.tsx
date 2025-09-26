@@ -24,11 +24,11 @@ const teamLead = [
 const teamMembers = [
   {
     name: "R. Fauzi Zuhri Wahyu Pradika, SH, MH.",
-    position: "legal specialist",
+    position: "Legal Specialist - Lawyer",
   },
   {
     name: "Prayudi Indra Wahyu, SH",
-    position: "legal specialist",
+    position: "Legal Specialist - Lawyer",
   },
   {
     name: "Bambang Widjanarko",
