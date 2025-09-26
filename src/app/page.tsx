@@ -25,10 +25,10 @@ export default function HomePage() {
       <TestimonialsSection />
       {/* <ContactSection /> */}
       <Footer />
-      <p className="font-black text-black/20 text-7xl fixed top-1/2 left-1/2 z-50 -translate-x-1/2 flex flex-col text-center bg-black/5 px-2 rounded-lg">
+      {/* <p className="font-black text-black/20 text-7xl fixed top-1/2 left-1/2 z-50 -translate-x-1/2 flex flex-col text-center bg-black/5 px-2 rounded-lg">
         TESTER
         <span className="text-lg">Crafted By Cathabot.id</span>
-      </p>
+      </p> */}
     </div>
   );
 }

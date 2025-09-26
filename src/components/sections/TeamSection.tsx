@@ -14,7 +14,7 @@ const teamLead = [
   },
   {
     name: "I Gusti Ngurah Bagus Suryadharma, SH, M.Kn",
-    position: "Legal Specialist",
+    position: "Legal Specialist - Lawyer",
     img: "/jaler.png",
     description:
       "Ahli Hukum Perusahaan & Investasi dengan track record internasional",
