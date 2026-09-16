@@ -36,7 +36,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "info@satyamlaw.id",
+    content: "ignbagus17@gmail.com",
     action: "Kirim Email",
     href:
       "mailto:info@satyamlaw.id?subject=" +
