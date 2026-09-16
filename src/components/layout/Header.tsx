@@ -58,6 +58,9 @@ export default function Header() {
                 Kantor Hukum & Konsultan Hukum
               </p>
             </div>
+            <div className="relative w-10 object-contain aspect-square -scale-x-100">
+              <Image src={"/satyam.png"} fill alt="satyam" />
+            </div>
           </div>
 
           <nav className="hidden lg:flex space-x-8">
@@ -106,7 +109,7 @@ export default function Header() {
                 <button
                   key={item.href}
                   onClick={() => {
-                    scrollToSection(item.href), setIsMobileMenuOpen(false);
+                    (scrollToSection(item.href), setIsMobileMenuOpen(false));
                   }}
                   className="hover:text-yellow-600 transition-all duration-300 font-medium text-gray-900 cursor-pointer"
                 >

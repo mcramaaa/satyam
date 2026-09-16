@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 const teamLead = [
-  {
-    name: " I Dewa Ayu Yudhiani, SH, M.Kn",
-    position: "Notaris & PPAT",
-    img: "/estri.png",
-    description: "Spesialis Hukum Pidana & Perdata dengan pengalaman 20+ tahun",
-    specialties: ["Hukum Pidana", "Litigasi"],
-  },
+  // {
+  //   name: " I Dewa Ayu Yudhiani, SH, M.Kn",
+  //   position: "Notaris & PPAT",
+  //   img: "/estri.png",
+  //   description: "Spesialis Hukum Pidana & Perdata dengan pengalaman 20+ tahun",
+  //   specialties: ["Hukum Pidana", "Litigasi"],
+  // },
   {
     name: "I Gusti Ngurah Bagus Suryadharma, SH, M.Kn",
     position: "Legal Specialist - Lawyer",
@@ -32,6 +32,10 @@ const teamMembers = [
   },
   {
     name: "Bambang Widjanarko",
+    position: "Tax & Licensing Specialist",
+  },
+  {
+    name: "Vee Aprilia, S.Pd. CPFP",
     position: "Tax & Licensing Specialist",
   },
   {
@@ -133,7 +137,7 @@ export default function TeamSection() {
                 </div>
                 <p className="text-gray-600 mt-2 text-sm">{service.position}</p>
               </div>
-            )
+            ),
           )}
         </div>
       </div>

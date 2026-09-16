@@ -16,16 +16,16 @@ const contactInfo = [
     text: "0812-3264-199",
     link: "https://api.whatsapp.com/send?phone=628123264199&text=Hai%20Satyam%20Law%20Office",
   },
-  {
-    icon: Phone,
-    text: "0812-3524-7453",
-    link: "https://api.whatsapp.com/send?phone=6281235247453&text=Hai%20Satyam%20Law%20Office",
-  },
-  {
-    icon: Mail,
-    text: "dewaayu_notaris@yahoo.com",
-    link: `mailto:dewaayu_notaris@yahoo.com`,
-  },
+  // {
+  //   icon: Phone,
+  //   text: "0812-3524-7453",
+  //   link: "https://api.whatsapp.com/send?phone=6281235247453&text=Hai%20Satyam%20Law%20Office",
+  // },
+  // {
+  //   icon: Mail,
+  //   text: "dewaayu_notaris@yahoo.com",
+  //   link: `mailto:dewaayu_notaris@yahoo.com`,
+  // },
   {
     icon: Mail,
     text: "ignbagus17@gmail.com",
@@ -33,9 +33,14 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    text: "Berlian IV Blok AA 131, Perumahan Jl. Swan Menganti Park No.Kel, Pelemwatu, Kec. Menganti, Kabupaten Gresik, Jawa Timur 61174",
-    link: "https://g.co/kgs/RTkbMnz",
+    text: "Jl. Blimbing I No. 8, Perumahan Pondok Candra Indah, Waru, Sidoarjo, Jawa Timur",
+    link: "https://maps.app.goo.gl/JnLwJDgqFAEh3hxs5",
   },
+  // {
+  //   icon: MapPin,
+  //   text: "Berlian IV Blok AA 131, Perumahan Jl. Swan Menganti Park No.Kel, Pelemwatu, Kec. Menganti, Kabupaten Gresik, Jawa Timur 61174",
+  //   link: "https://g.co/kgs/RTkbMnz",
+  // },
 ];
 
 const socialLinks = [
@@ -63,6 +68,9 @@ export default function Footer() {
                   SATYAM LAW OFFICE
                 </h3>
                 <p className="text-gray-600">Kantor Hukum & Konsultan Hukum</p>
+              </div>
+              <div className="h-8 w-10 relative aspect-square -scale-x-100">
+                <Image src={"/satyam.png"} fill alt="satyam" />
               </div>
             </div>
             <p className="text-gray-600 mb-6 max-w-md text-sm md:text-base">

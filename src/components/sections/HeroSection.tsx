@@ -61,7 +61,7 @@ export default function HeroSection() {
                 <p className="text-3xl font-black text-red-800 ">
                   SATYAM LAW OFFICE
                 </p>
-                <div className="relative w-20 md:w-16 object-contain aspect-square">
+                <div className="relative w-20 md:w-16 object-contain aspect-square -scale-x-100">
                   <Image src={"/satyam.png"} fill alt="satyam" />
                 </div>
               </div>

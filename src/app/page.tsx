@@ -9,6 +9,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import RequirementsSection from "@/components/sections/RequirementsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import Footer from "@/components/layout/Footer";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function HomePage() {
   return (
@@ -23,7 +24,7 @@ export default function HomePage() {
       <FAQSection />
       <RequirementsSection />
       <TestimonialsSection />
-      {/* <ContactSection /> */}
+      <ContactSection />
       <Footer />
       {/* <p className="font-black text-black/20 text-7xl fixed top-1/2 left-1/2 z-50 -translate-x-1/2 flex flex-col text-center bg-black/5 px-2 rounded-lg">
         TESTER
